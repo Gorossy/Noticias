@@ -1,0 +1,243 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>UniNoticias</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    
+
+    
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/carousel.css' %}" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">UniNoticias</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/183FD/production/_124852399_hi067948842-1.jpg.webp"  width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" ><rect width="100%" height="100%" fill="#777"/></img>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Viruela del mono</h1>
+            <p>Si sientes que el mundo aún se está recuperando de la pandemia de covid-19, lo siento, pero hay otro virus con el que lidiar.</p>
+            <p><a class="btn btn-lg btn-primary" href="https://www.bbc.com/mundo/noticias-61538210">Informate</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://img.asmedia.epimg.net/resizer/op7u5O_OAq-RR6e-1TfilMOYwX0=/644x362/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/AZ25EC6ND5BHLFVCHNYNTPFL3E.jpg"  width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" ><rect width="100%" height="100%" fill="#777"/></img>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Boyacá continúa con la aplicación de diferentes dosis y refuerzos a su población.</h1>
+            <p>En #Boyacá la aplicación del segundo refuerzo de la vacuna contra la COVID-19 para población mayor de 50 años, se hará 4 meses después de la aplicación de su primer refuerzo. </p>
+            <p><a class="btn btn-lg btn-primary" href="https://colombia.as.com/actualidad/covid-en-colombia-en-vivo-hoy-vacunacion-casos-y-noticias-ultima-hora-n-6/">Informate</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://caracol.com.co/radio/imagenes/2022/05/22/a_vivir_que_son_dos_dias/1653237669_717187_1653237949_miniatura_normal.jpg"  width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" ><rect width="100%" height="100%" fill="#777"/></img>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Nace en Colombia la primera orquesta filarmónica de mujeres del país</h1>
+            <p>La orquesta filarmónica de mujeres de Bogotá se constituye como la primera en el país en tener un 100% de mujeres.</p>
+            <p><a class="btn btn-lg btn-primary" href="https://caracol.com.co/programa/2022/05/22/a_vivir_que_son_dos_dias/1653237669_717187.html">Informate</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/ElColombiano.svg/1200px-ElColombiano.svg.png"  width="140" height="140" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Imagen</title><rect width="100%" height="100%" fill="#777"/></img>
+
+        <h2 class="fw-normal">El Colombiano</h2>
+        <p>Grupo editorial multiplataforma con más de 100 años de existencia. Fundado el 6 de febrero de 1912 por Francisco de Paula Pérez, se ha especializado en la investigación y generación de contenidos periodísticos para diferentes plataformas en las que provee a las audiencias de piezas multimediales informativas, de tendencias y de otros recursos destinados a mejorar la calidad de vida del individuo.</p>
+        <p><a class="btn btn-secondary" href="#">Ver pagina &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="data:image/jpeg;base64,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"  width="140" height="140" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Imagen</title><rect width="100%" height="100%" fill="#777"/></img>
+
+        <h2 class="fw-normal">La Nación</h2>
+        <p>Grupo informativo encargado de la recopilacion de noticias del pais.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="data:image/png;base64,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"  width="140" height="140" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Imagen</title><rect width="100%" height="100%" fill="#777"/></img>
+
+        <h2 class="fw-normal">BBC News</h2>
+        <p>La British Broadcasting Corporation (Corporación Británica de Radiodifusión) es el servicio público de radio, televisión e internet de Reino Unido, con más de nueve décadas de trayectoria.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+    {% for title,description,image,url in news %}
+    <hr class="featurette-divider">
+      {% if forloop.counter0|divisibleby:2 %}
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">{{title}}</h2>
+          <p>{{description}}</p>
+          <a href="{{url}}" >
+            <button type="button" class="btn btn-secondary" >Ver más</button>
+          </a>
+        </div>
+        {% if image %}
+        <div class="col-md-5 order-md-1">
+          <img src='{{image}}' width="500" height="500" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Imagen</title><rect width="100%" height="100%"/></img>
+        </div>
+        {% endif %}
+      </div>
+    {% else %}
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">{{title}}</h2>
+        <p class="lead">{{description}}</p>
+        <a href="{{url}}" >
+        <button type="button" class="btn btn-secondary" >Ver más</button>
+        </a>
+      </div>
+      {% if image %}
+      <div class="col-md-5">
+        
+        <img src='{{image}}' width="500" height="500" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Imagen</title><rect width="100%" height="100%"/></img>
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+    {% endfor %}
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+</div>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
